@@ -44,11 +44,11 @@ const users  =  [
 users[1].email
 console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+ console.log(Object.keys(tinderUser));
+ console.log(Object.values(tinderUser));
+ console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLogged')); // Property hai kya  object me 
+ console.log(tinderUser.hasOwnProperty('isLogged')); // Property hai kya  object me 
 
 
 const course = {
@@ -58,7 +58,7 @@ const course = {
 }
 //course.courseInstructor
 const {courseInstructor:instructor} =  course
-console.log(instructor);
+ console.log(instructor);
 
 // {
 //     "name":"hitesh",
@@ -66,11 +66,11 @@ console.log(instructor);
 //     "price":"free"
 // }
 
-[
-    {},
-    {},
-    {},
-]
+// [
+//     {},
+//     {},
+//     {},
+// ]
 
 
 
