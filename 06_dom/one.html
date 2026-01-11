@@ -19,6 +19,12 @@
         <h2>Lorem ipsum dolor sit.</h2>
         <p>Lorem ipsum dolor sit amet.</p>
         <input type="password" name="" id="">
+        <ul>
+            <li class = "list-item">one</li>
+            <li class = "list-item">two</li>
+            <li class = "list-item">three</li>
+            <li class = "list-item">four</li>
+        </ul>
     </div>
 </body>
 </html>
@@ -67,4 +73,19 @@ ocument.querySelector('h2')
 document.querySelector('#title')
 <h1 id=​"title" class=​"heading">​…​</h1>​
 document.querySelector('.heading')
+
+document.querySelector('input[type = "password"]')
+const tempLiList = document.querySelectorAll('li')
+undefined
+tempLiList[0].style.color = 'green'
+'green'
+const myH1 = document.querySelectorAll('h1')
+undefined
+myH1
+NodeList [h1#title.heading]
+myH1.style.color = 'green'
+VM1580:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:18
+(anonymous) @ VM1580:1
+myH1[0].style.color = 'green'
 -->
