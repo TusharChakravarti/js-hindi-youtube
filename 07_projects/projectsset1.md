@@ -248,7 +248,7 @@ if(!changedColor){
 stop.addEventListener('click',function(){
 clearInterval(changedColor);
    changedColor = null
-  })
+  }) 
 ```
 
 
