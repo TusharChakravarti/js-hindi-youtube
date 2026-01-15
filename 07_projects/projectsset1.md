@@ -189,3 +189,67 @@ newGameButton.addEventListener('click',function(e){
 ```
 
 
+## project 5 solution code
+
+```javascript
+const insert = document.querySelector("#insert");
+
+window.addEventListener('keydown',(e)=>{
+insert.innerHTML = `
+<div class = "color">
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Keycode</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>${(e.key===" " )?"Space":e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+ 
+</table>
+</div>
+`
+})
+```
+
+# project 6 solution 
+
+``` javascript
+// generate a random color
+let changedColor;
+const randomColor = function(){
+  const hex   ="0123456789ABCDEF"
+   let color = '#'
+   for(let i = 0;i<6;i++){color+=hex[Math.floor(Math.random()*16)]
+   }
+   return color;
+   
+}
+
+
+const start = document.querySelector('#start');
+const stop = document.querySelector('#stop');
+
+start.addEventListener('click',function(){
+if(!changedColor){
+  changedColor = setInterval(function(){
+    document.body.style.backgroundColor= randomColor();
+  },1000);
+
+}
+ 
+  
+
+})
+
+stop.addEventListener('click',function(){
+clearInterval(changedColor);
+   changedColor = null
+  })
+```
+
+
+
