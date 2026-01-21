@@ -34,10 +34,10 @@ for (const key of map) {
     
 }
 
-// for(const [key,value] of map){
-// console.log(key,":-",value);
+for(const [key,value] of map){
+console.log(key,":-",value);
 
-// }
+}
 
 const myObject = {
     game1:'NFS',
